@@ -8,8 +8,14 @@ public class CustomExceptionThrower {
      *
      * I recommend looking at the test case for a good example of try/catch block usage, as well.
      */
-    public void throwCustomException(){
-
+    public void throwCustomException() throws CustomException {
+        int a = 8;
+        int b = 0;
+        if (a > b) {
+            throw new CustomException ("First number is bigger than second.");
+        } else if (a < b) {
+            throw new CustomException ("First number is smaller than second");
+        }
     }
 
 }
