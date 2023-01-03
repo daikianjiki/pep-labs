@@ -1,0 +1,1 @@
+UPDATE site_user firstName = 'Rush' WHERE condition;
