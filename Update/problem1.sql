@@ -1,1 +1,1 @@
-UPDATE site_user firstName = 'Rush' WHERE condition;
+UPDATE site_user SET lastname = 'Rush' WHERE id = 2;
