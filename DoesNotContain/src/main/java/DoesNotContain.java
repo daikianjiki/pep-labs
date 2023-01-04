@@ -13,16 +13,16 @@ public class DoesNotContain {
      * @return true if arr does not contain target. false otherwise.
      */
     public boolean arrayDoesNotContain(int[] arr, int target){
+        boolean n = true;
         for (int i = 0; i < arr.length; i++) {
-            // if (arr[i] != target) {
-            //     return true;
-            // } 
-            // while (arr[i] != target) {
-            //     return true;
-            // }
-            do {
-                return true;
-            } while (arr[i] != target);
-        } return false;
+            /*
+             * I use the for loop so I can get arr[i]. If arr[i] != target, then it should come out true.
+             * If arr[i] = {1, 2, 3, 4, 5} it returns true at arr[0] if target = 5
+             * so the code ends before arr[4]? I need to write a code that continues to check throughout the each index..?
+             */
+            if (arr[i] == target) {
+                n = false;
+            } 
+        } return n;
     }
 }
