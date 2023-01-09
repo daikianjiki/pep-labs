@@ -40,12 +40,12 @@
     :git_user_name: Daiki Anjiki
 :progress:
   :count_labs_total: 96
-  :count_labs_passed: 1
+  :count_labs_passed: 0
   :count_tests_total: 361
-  :count_tests_passed: 4
+  :count_tests_passed: 1
 :progress_test:
   :count_tests_total: 361
-  :count_tests_passed: 4
+  :count_tests_passed: 1
   Start:
     :Week: 1
     :Order: 1
@@ -557,13 +557,15 @@
     :Order: 13
     :Type: challenge
     :count_tests: 4
-    :count_tests_passed: 4
+    :count_tests_passed: 1
     :tests:
       containsTest1: 1
       containTest2: 1
       containTest3: 1
       containTest4: 1
       ContainsTest: 0
+      groceryListEmptyOnStartTest: 1
+      groceryListAddTest1: 0
   DoesNotContain:
     :Week: 4
     :Order: 14
