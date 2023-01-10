@@ -18,7 +18,7 @@ app.get("/request-was-accepted", ctx -> {
     ctx.status(202);
 });
 ```
-
+ 
 The only line we need to add to achieve this is `ctx.status(code);` Appropriate codes should be sent back. For instance:
  - 500 represents a server-side error - you should look to the server for a stack trace or other debugging info
  - 400 represents a client-side error
