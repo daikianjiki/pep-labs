@@ -1,5 +1,7 @@
 package com.revature;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
+
 import io.javalin.Javalin;
 
 /**
@@ -17,7 +19,11 @@ public class JavalinSingleton {
          * Note: Please refer to the "RequestBody.MD" file for more assistance if needed.
          */
         app.post("/problem1", ctx -> {
-                //implement logic here
+                //implement logic here 
+                String jsonString = ctx.body();
+                ObjectMapper om = new ObjectMapper();
+                om.readValue(jsonString, artistName);
+                
         });
 
         /**
