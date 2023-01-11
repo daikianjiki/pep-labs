@@ -1,3 +1,4 @@
+
 public class IsSorted {
     /**
      * Return true if arr is sorted, smallest to largest, false otherwise.
@@ -8,9 +9,12 @@ public class IsSorted {
      */
     public boolean checkSort(int[] arr){
         //I need to compare an arr with arr that is sorted. This way, I can tell if its sorted or not sorted. 
-        boolean sorted = false;
-        int sortedArray = 
-        
-        return sorted;
+        boolean isSorted = false;
+        for (int i = 0; i < arr.length; i++) {
+            if () {
+                isSorted = true;
+            }
+        }
+        return isSorted;
     }
 }
