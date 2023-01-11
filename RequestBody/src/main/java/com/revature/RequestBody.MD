@@ -44,7 +44,7 @@ We can get the json string in a String variable by utilizing the `ctx.body()` me
 ```java
 app.post("/user", ctx -> {
     String jsonString = ctx.body();
-});
+}); 
 ```
 
 this is a good start but we need to be able to utilize the fields in the json string... We need to utilze jackson to convert it into a java object.
