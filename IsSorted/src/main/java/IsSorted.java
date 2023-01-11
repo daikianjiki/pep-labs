@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class IsSorted {
     /**
@@ -10,8 +11,9 @@ public class IsSorted {
     public boolean checkSort(int[] arr){
         //I need to compare an arr with arr that is sorted. This way, I can tell if its sorted or not sorted. 
         boolean isSorted = false;
+        int [] sortedArr = Arrays.stream(arr).sorted().toArray();
         for (int i = 0; i < arr.length; i++) {
-            if () {
+            if (arr[i] == sortedArr[i]) {
                 isSorted = true;
             }
         }
