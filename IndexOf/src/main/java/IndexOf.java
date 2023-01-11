@@ -11,9 +11,12 @@ public class IndexOf {
      * @return the first index (position) of n in arr. if n does not exist in arr, return -1.
      */
     public int getIndex(int[] arr, int n){
+        // I am looking for index of an array. The value of index must match the value of n. Return the index if the value of index matches the value of n. 
         for (int i = 0; i <arr.length; i++) {
-            
+            if (arr[i] == n) {
+                return i;
+            }
         }
-        return n;
+        return -1;
     }
 }
