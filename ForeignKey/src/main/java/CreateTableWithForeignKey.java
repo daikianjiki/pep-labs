@@ -53,7 +53,7 @@ import java.sql.Statement;
  *  song_name varchar(100),
  *  artist_fk int REFERENCES artist(id)
  * );
- *
+ * 
  *
  * notice the constraint we add to the artist_fk. We are referencing the id column in the artist table.
  * This is how we create a foreign key.
