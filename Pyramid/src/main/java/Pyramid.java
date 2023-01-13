@@ -31,9 +31,8 @@ public class Pyramid {
 
             for (int j = 0; j <= i; j++) {
                 return "*";
-
             }
         }
-        return "*";
+        return "\n";
     }
 }
