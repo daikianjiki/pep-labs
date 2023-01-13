@@ -92,7 +92,7 @@ public class OuterJoinActivity {
          * (right side) tables using the class_title column as the join on column. This means that when no student
          * exists for a class, a row with a NULL student will be in the resulting query.
          * Hint: You should start with "SELECT * FROM class"
-         */
+         */ 
 
         String sql = FileUtil.parseSQLFile("problem1.sql");
 
