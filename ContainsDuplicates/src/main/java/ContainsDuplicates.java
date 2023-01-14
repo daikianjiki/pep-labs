@@ -10,15 +10,15 @@ public class ContainsDuplicates {
      * @return true if nums contains any duplicate values, false if it does not.
      */
     public boolean containsDuplicate(int[] nums){
-        Set<Integer> arr = new HashSet<>();
-        Set<Integer> arr2 = new HashSet<>();
+        // Set<Integer> arr = new HashSet<>();
+        // Set<Integer> arr2 = new HashSet<>();
         for (int i = 0; i < nums.length; i++) {
-            if (!arr.add(i)) {
-                arr2.add(i);
+            for (int j = 0; j < nums.length; i++) {
+                if (nums[i] == nums[j]) {
+                    return true;
+                }
             }
-            return arr2;
         }
-        
         return false;
     }
 }
