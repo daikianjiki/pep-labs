@@ -786,7 +786,7 @@
     :count_tests: 4
     :count_tests_passed: 1
     :tests:
-      containsDuplicatesTest1: 0
+      containsDuplicatesTest1: 1
       containsDuplicatesTest2: 0
       containsDuplicatesTest3: 0
       containsDuplicatesTest4: 0
