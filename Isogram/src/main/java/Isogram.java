@@ -13,6 +13,11 @@ public class Isogram {
      * @return true if str is an isogram, false otherwise.
      */
     public boolean isIsogram(String str){
-        return false;
+        for (int i = 0; i < str.length(); i++) {
+            if(str.charAt(i) == str.charAt(i+1)) {
+                return false;
+            }
+        }
+        return true;
     }
 }
