@@ -57,10 +57,10 @@ public class SampleClass {
 
     //    implement a custom .equals(SampleClass other){} method here.
     public boolean equals(SampleClass other) {
-        if (this.getClass() != other.getClass()) {
-            return false;
-        }
-        if (this.getClass().equals(other.getClass())) {
+        // if (this.getClass().equals(other.getClass())) {
+        //     return true;
+        // }
+        if (this.b == this.equals(other)) {
             return true;
         }
         return false;
@@ -68,7 +68,7 @@ public class SampleClass {
 
     //    implement a custom .toString(){} method here.
     public String toString() {
-        return other.toString();
+        return this.toString();
     }
     
 }
