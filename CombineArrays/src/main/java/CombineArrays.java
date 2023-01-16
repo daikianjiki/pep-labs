@@ -1,5 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.Arrays;
 
 public class CombineArrays {
     /**
@@ -10,14 +9,10 @@ public class CombineArrays {
      * @return an array containing the contents of arr1 followed by the contents of arr2.
      */
     public int[] combine(int[] arr1, int[] arr2){
-        // List<Integer> arr3 = new ArrayList<>();
-        int[] arr3 = {};
-        int[] value = {};
-        for (int i = 0; i < arr1.length; i++) {
-            value[i] = arr1[i] + arr2[i];
-            arr3 = new int[value[i]];
-        }
-
-        return arr3;
+        int arr3 = arr1.length + arr2.length;
+        int[] comArr = new int[arr3];
+        System.arraycopy(arr1, 0, comArr, 0, arr1.length);
+        System.arraycopy(arr2, 0, comArr, arr1.length, arr2.length);
+        return comArr;
     }
 }
