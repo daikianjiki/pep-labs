@@ -10,7 +10,7 @@ public class LargestSum {
      * @return the largest possible sum of separate numbers from nums.
      */
     public int bigSum(List<Integer> nums){
-        
+        if
         return 0;
     }
 }
