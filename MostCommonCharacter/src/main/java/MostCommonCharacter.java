@@ -18,8 +18,8 @@ public class MostCommonCharacter {
         for (int i = 0; i < str.length(); i++) {
             character = str.charAt(i);
             map.put(i, character);
-            if (map.containsValue(character)) {
-                count++;
+            while (map.containsValue(character)) {
+                count
                 value = map.get(i);
             }
         }
