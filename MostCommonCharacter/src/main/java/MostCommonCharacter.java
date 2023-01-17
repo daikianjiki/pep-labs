@@ -10,19 +10,30 @@ public class MostCommonCharacter {
      * @return the most common character within str.
      */
     public char recurringChar(String str) {
-        Map<Integer, Character> map = new HashMap<>();
-
-        char character = ' ';
-        char value = ' ';
-        int count = 0;
-        for (int i = 0; i < str.length(); i++) {
-            character = str.charAt(i);
-            map.put(i, character);
-            while (map.containsValue(character)) {
-                count
-                value = map.get(i);
+        // Map<Character, Integer> map = new HashMap<>();
+        // char key = ' ';
+        // int value = 0;
+        // for (int i = 0; i < str.length(); i++) {
+        //     key = str.charAt(i);
+        //     if (map.containsKey(key)) {
+        //         value = value + 1;
+        //         map.put(key, value);
+        //     } else {
+        //         map.put(key, 1);
+        //     }
+            
+        // }
+        // return key;
+        char maxChar = ' ';
+        int maxCount = 0;
+        int[] charCount = new int[Character.MAX_VALUE+1];
+        for (int i = str.length() - 1; i >= 0; i--) {
+            char ch = str.charAt(i);
+            if (++charCount[ch]>= maxCount) {
+                maxCount = charCount[ch];
+                maxChar = ch;
             }
         }
-        return value;
+        return maxChar;
     }
 }
