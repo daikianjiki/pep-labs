@@ -21,12 +21,12 @@ public class WordCountMap {
         int value = 0;
         for (int i = 0; i < split.length; i++) {
             key = split[i];
-            if (map.containsKey(key)) {
-                // value = map.get(key);
-                value = value + 1;
-                map.put(key, value);
-            } 
-            map.put(key, 1);
+            if (!map.containsKey(key)) {
+                map.put(key, 1);
+            } else {
+                value = map.get(key);
+                map.put(key, value + 1);
+            }
         }
         return map;
     }
