@@ -22,7 +22,7 @@ public class WordCountMap {
         for (int i = 0; i < split.length; i++) {
             key = split[i];
             if (map.containsKey(key)) {
-                value = map.get(key);
+                // value = map.get(key);
                 value = value + 1;
                 map.put(key, value);
             } 
