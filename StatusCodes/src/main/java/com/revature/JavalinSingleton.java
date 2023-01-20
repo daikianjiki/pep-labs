@@ -12,9 +12,11 @@ public class JavalinSingleton {
          * 
          * Note: Please refer to the "StatusCodes.MD" file for more assistance if needed.
          */
-        return app.get("/client-side-err", ctx -> {ctx.status(400);
+        app.get("/client-side-err", 
+        ctx -> {
+            ctx.status(400);
         });
-
+        return app;
         
     }
     
