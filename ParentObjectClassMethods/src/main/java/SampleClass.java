@@ -57,7 +57,7 @@ public class SampleClass {
 
     //    implement a custom .equals(SampleClass other){} method here.
     public boolean equals(SampleClass other) {
-
+        
         if (this.a == other.a && this.b == other.b) {
             return true;
         }
@@ -71,31 +71,6 @@ public class SampleClass {
         String ab = newA + newB;
 
         return ab;
-    }
-
-    @Override
-    public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + a;
-        result = prime * result + (b ? 1231 : 1237);
-        return result;
-    }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        SampleClass other = (SampleClass) obj;
-        if (a != other.a)
-            return false;
-        if (b != other.b)
-            return false;
-        return true;
     }
     
 }
