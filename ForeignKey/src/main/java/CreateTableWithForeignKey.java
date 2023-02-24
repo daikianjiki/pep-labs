@@ -80,8 +80,10 @@ public class CreateTableWithForeignKey {
         /**
          * Assignment: create a "post" table that has the following columns:
          *       post table:
-         *       |   id  |     post        |        user_fk         |
+         *       |   id  |     post        |        user        |
          *       ----------------------------------------------------
+         *        1         "Hello"          2
+         *        2         "Good Bye"       3
          *       where the id is of type SERIAL PRIMARY KEY, post is of type varchar(255), and user_fk is of type
          *       int.
          *
